@@ -1,0 +1,23 @@
+body {
+  background: white;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+@font-face {
+  font-family: Morpheus;
+  src: url("../fonts/MORPHEUS.TTF");
+  font-weight: 400;
+}
