@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>The Witcher</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="dist/assets/favicon3.png" />
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+  <section class="carousel">
+
+
+    <!--  GERALT  -->
+    <div class="person anim" id="showman">
+      <img class="bg-img" src="dist/assets/w1.jpg" alt="bg w1">
+      <div class="top-menu">
+        <ul class="nav topnav">
+          <li><a href="#ciri">ciri</a></li>
+          <li><a href="#triss">triss</a></li>
+          <li><a href="#yennefer">yennefer</a></li>
+        </ul>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/c0i88t0Kacs?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-text">
+          <h1>The Witcher 3</h1>
+          <h2>Killing Monsters Cinematic Trailer</h2>
+        </div>
+      </div>
+      <img class="showman" src="dist/assets/geralt.png" alt="Geralt">
+
+    </div>
+
+    <!--  CIRI  -->
+    <div class="person2" id="ciri">
+      <img class="bg-img" src="dist/assets/w2.jpg" alt="bg w2">
+
+      <ul class="nav horizontal 1nav fd">
+        <li style="visibility:hidden"><a href="#ciri"><img src="dist/assets/arrow-r.png"></a></li>
+        <li><a href="#ciri"><img src="dist/assets/arrow-r.png"></a></li>
+      </ul>
+
+      <div class="top-menu">
+        <ul class="nav topnav">
+          <li><a href="#showman">geralt</a></li>
+          <li><a href="#triss">triss</a></li>
+          <li><a href="#yennefer">yennefer</a></li>
+        </ul>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/r9ErV2FcReg?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-text">
+          <h1>Gwent</h1>
+          <h2>The Witcher Card Game</h2>
+        </div>
+      </div>
+      <img class="ciri" src="dist/assets/ciri.png" alt="Ciri">
+    </div>
+
+    <!--  TRISS  -->
+    <div class="person" id="triss">
+      <img class="bg-img" src="dist/assets/w3.jpg" alt="bg w3">
+
+      <ul class="nav horizontal 2nav">
+        <li><a href="#showman"><img src="dist/assets/arrow-l.png"></a></li>
+        <li><a href="#triss"><img src="dist/assets/arrow-r.png"></a></li>
+      </ul>
+
+      <div class="top-menu">
+        <ul class="nav topnav">
+          <li><a href="#showman">geralt</a></li>
+          <li><a href="#ciri">ciri</a></li>
+          <li><a href="#yennefer">yennefer</a></li>
+        </ul>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HtVdAasjOgU?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-text">
+          <h1>The Witcher 3</h1>
+          <h2>The Sword Of Destiny Trailer</h2>
+        </div>
+      </div>
+      <img class="triss" src="dist/assets/triss.png" alt="Triss">
+    </div>
+
+    <!--  YENNEFER  -->
+    <div class="person" id="yennefer">
+      <img class="bg-img" src="dist/assets/w4.jpg" alt="bg w4">
+
+      <ul class="nav horizontal 3nav">
+        <li><a href="#ciri"><img src="dist/assets/arrow-l.png"></a></li>
+        <li><a href="#yennefer"><img src="dist/assets/arrow-r.png"></a></li>
+      </ul>
+
+      <div class="top-menu">
+        <ul class="nav topnav">
+          <li><a href="#showman">geralt</a></li>
+          <li><a href="#ciri">ciri</a></li>
+          <li><a href="#triss">triss</a></li>
+        </ul>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FcogCjLymeI?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-text">
+          <h1>The Witcher 3</h1>
+          <h2>The Trail Opening Cinematic</h2>
+        </div>
+      </div>
+      <img class="yennefer" src="dist/assets/yennefer.png" alt="Yennefer">
+    </div>
+
+    <!--  END DIV -->
+    <div class="person">
+      <img src="dist/assets/final-logo.png" alt="final logo">
+
+      <ul class="nav horizontal 4nav">
+        <li><a href="#triss"><img src="dist/assets/arrow-l.png"></a></li>
+      </ul>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('ul.nav a').bind('click', function(event) {
+        var $anchor = $(this);
+        /*
+        if you want to use one of the easing effects:
+        $('html, body').stop().animate({
+            scrollLeft: $($anchor.attr('href')).offset().left
+        }, 1500,'easeInOutExpo');
+         */
+        $('html, body').stop().animate({
+          scrollLeft: $($anchor.attr('href')).offset().left
+        }, 1000);
+        event.preventDefault();
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(window).scroll(function() {
+
+      if ($(this).scrollLeft() > 0) {
+        $('.showman').fadeOut();
+        $('.1nav').fadeOut();
+      } else {
+        $('.showman').fadeIn();
+        $('.1nav').fadeIn();
+      }
+      if ($(this).scrollLeft() > 1920) {
+        $('.ciri').fadeOut();
+        $('.2nav').fadeOut();
+      } else {
+        $('.ciri').fadeIn();
+        $('.2nav').fadeIn();
+      }
+      if ($(this).scrollLeft() > 3840) {
+        $('.triss').fadeOut();
+        $('.3nav').fadeOut();
+      } else {
+        $('.triss').fadeIn();
+        $('.3nav').fadeIn();
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $("iframe").click(function() {
+      $("h1").toggle();
+    });
+  </script>
+</body>
+
+</html>
