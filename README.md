@@ -1,7 +1,3 @@
-# Wicher3 Horizontal Scroll --DESKTOP-ONLY
-
-![GitHub last commit](https://img.shields.io/github/last-commit/sht0/witcher3-horizontal.svg) ![GitHub](https://img.shields.io/github/license/sht0/witcher3-horizontal.svg) ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/sht0/witcher3-horizontal.svg) ![GitHub top language](https://img.shields.io/github/languages/top/sht0/witcher3-horizontal.svg)
-
 ## Description
 
 This is a personal project about Witcher 3. It's made using `jquery horizontal scroll`.
